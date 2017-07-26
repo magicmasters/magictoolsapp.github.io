@@ -1,0 +1,33 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "http://magictoolsapp.github.io/FullSizeRender.jpg") 
+        {
+            document.getElementById("imgClickAndChange").src = "https://magictoolsapp.github.io/FullSizeRender%20(1).jpg";
+        }
+        if (document.getElementById("imgClickAndChange").src == "http://magictoolsapp.github.io/FullSizeRender%20(1).jpg")
+    {
+    document.getElementById("imgClickAndChange").src = "https://magictoolsapp.github.io/FullSizeRender%20(2).jpg";
+    }
+    if (document.getElementById("imgClickAndChange").src == "http://magictoolsapp.github.io/FullSizeRender%20(2).jpg")
+    {
+    document.getElementById("imgClickAndChange").src = "https://magictoolsapp.github.io/FullSizeRender%20(3).jpg";
+    }
+     if (document.getElementById("imgClickAndChange").src == "http://magictoolsapp.github.io/FullSizeRender%20(3).jpg")
+     {
+     open(location, '_self').close();
+     }
+</script>
+</head>
+<body>
+<p>
+        <img alt="" src="http://magictoolsapp.github.io/FullSizeRender.jpg" 
+            style="height: 100%; width: 1100%" id="imgClickAndChange" onclick="changeImage()"  />
+</p>
+</body>
+</html>
