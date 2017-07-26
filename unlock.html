@@ -4,7 +4,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <script language="javascript">
-    function changeImage() {
+        var img = document.getElementById("img");
+    img.onclick = function() {
 
         if (document.getElementById("imgClickAndChange").src == "http://magictoolsapp.github.io/FullSizeRender.jpg") 
         {
@@ -26,7 +27,7 @@
 </script>
 </head>
 <body>
-<p onclick="changeImage()">
+<p id="img">
         <img alt="" src="http://magictoolsapp.github.io/FullSizeRender.jpg" 
             style="height: 100%; width: 100%" id="imgClickAndChange"/>
 </p>
