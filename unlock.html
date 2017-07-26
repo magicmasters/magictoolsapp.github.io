@@ -3,7 +3,14 @@
 <head>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<script language="javascript">
+
+</head>
+<body>
+<p onclick="changeImage()">
+        <img alt="" src="http://magictoolsapp.github.io/FullSizeRender.jpg" 
+            style="height: 100%; width: 100%" id="imgClickAndChange"/>
+</p>
+    <script language="javascript">
     function changeImage() {
 
         if (document.getElementById("imgClickAndChange").src == "http://magictoolsapp.github.io/FullSizeRender.jpg") 
@@ -23,11 +30,5 @@
      open(location, '_self').close();
      }
 </script>
-</head>
-<body>
-<p onclick="changeImage()">
-        <img alt="" src="http://magictoolsapp.github.io/FullSizeRender.jpg" 
-            style="height: 100%; width: 100%" id="imgClickAndChange"/>
-</p>
 </body>
 </html>
