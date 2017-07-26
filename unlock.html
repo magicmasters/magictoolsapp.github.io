@@ -3,37 +3,25 @@
 <head>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    
+  <script>
+      function change() {
+         var image = document.getElementById("image");
+          if(image_tracker=='one') {
+              image.src="https://magictoolsapp.github.io/FullSizeRender%20(2)";
+              image_tracker=="two";
+          }
+          if(image_tracker=='two') {
+              image.src="https://magictoolsapp.github.io/FullSizeRender%20(1)";
+              image_tracker=="three ";
+          }
+          if(image_tracker=='three') {
+              image.src="https://magictoolsapp.github.io/FullSizeRender";
+              image_tracker=="four";
+          }
+      }
+    </script>
 </head>
 <body>
-<div id="tab_cont" class="tab_cont">
-      <h2>Downspouts</h2>
-      <ul id="downspouts">
-         <li><img onclick = changePic(this) src="/FullSizeRender%20(3).jpg" alt="HarborBlue" width="90px" /><p>Harbor Blue</p></li>
-         <li><img onclick = changePic(this) src="/FullSizeRender%20(2).jpg" alt="ColonialRed" width="90px" /><p>Colonial Red</p></li>
-         <li><img onclick = changePic(this) src="/FullSizeRender%20(1).jpg" alt="MediumBronze" width="90px" /><p>Medium Bronze</p></li>
-      </ul>
-      <h2>Trims</h2>
-      <ul id="trims">
-         <li><img onclick = changePic(this) src="/FullSizeRender%20(3).jpg" alt="HarborBlue" width="90px" /><p>Harbor Blue</p></li>
-         <li><img onclick = changePic(this) src="/FullSizeRender%20(2).jpg" alt="ColonialRed" width="90px" /><p>Colonial Red</p></li>
-         <li><img onclick = changePic(this) src="/FullSizeRender%20(1).jpg" alt="MediumBronze" width="90px" /><p>Medium Bronze</p></li>
-      </ul>
-   </div>
-   <div class="display_cont">
-      <div class="content">
-         <img id="disp_img" src="/FullSizeRender.jpg" alt="sidingMetal" width="525px" height="300px" />
-      </div>
-   </div>
-   <script type="text/javascript">
-      
-      function changePic(that) {
-         var src_attrib = that.getAttribute('src');
-         var src_pic = "imgs/buildings/" + src_attrib.substring(src_attrib.lastIndexOf("/") +1);
-         
-         document.getElementById('disp_img').setAttribute('src', src_pic);
-      }
-   </script>
-
+  <img src="https://magictoolsapp.github.io/FullSizeRender%20(3)" id="image" onclick="change();">
 </body>
 </html>
