@@ -9,24 +9,27 @@
       function change() {
          var image = document.getElementById("image");
           if(image_tracker=='one') {
-              image.src="https://magictoolsapp.github.io/FullSizeRender (3).jpg";
-              image_tracker = "two";
             var audio = new Audio('Tock.mp3');
 audio.play();
+              image.src="https://magictoolsapp.github.io/FullSizeRender (3).jpg";
+              image_tracker = "two";
+            
            return
           }
           if(image_tracker=='two') {
-              image.src="https://magictoolsapp.github.io/FullSizeRender (1).jpg";
-              image_tracker = "three";
             var audio = new Audio('Tock.mp3');
 audio.play();
+              image.src="https://magictoolsapp.github.io/FullSizeRender (1).jpg";
+              image_tracker = "three";
+            
             return
           }
           if(image_tracker=='three') {
-              image.src="https://magictoolsapp.github.io/FullSizeRender.jpg";
-              image_tracker = "four";
             var audio = new Audio('Tock.mp3');
 audio.play();
+              image.src="https://magictoolsapp.github.io/FullSizeRender.jpg";
+              image_tracker = "four";
+            
             return
           }
         
@@ -42,6 +45,6 @@ audio.play();
     </script>
 </head>
 <body>
-  <img src="magictoolsapp.github.io/FullSizeRender (2).jpg" id="image" onclick="change();">
+  <img src="magictoolsapp.github.io/FullSizeRender (2).jpg" id="image" onclick="change();" height="100%" width="100%">
 </body>
 </html>
