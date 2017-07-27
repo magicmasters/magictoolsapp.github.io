@@ -5,22 +5,27 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <script>
     var image_tracker = 'one';
+   function sleep(miliseconds) {
+                var currentTime = new Date().getTime();
+                while (currentTime + miliseconds >= new Date().getTime()) {
+                }
+            }
       function change() {
          var image = document.getElementById("image");
           if(image_tracker=='one') {
               image.src="https://magictoolsapp.github.io/FullSizeRender (3).jpg";
               image_tracker = "two";
-            setTimeout(change, 1000);
+            sleep(1000);
           }
           if(image_tracker=='two') {
               image.src="https://magictoolsapp.github.io/FullSizeRender (1).jpg";
               image_tracker = "three ";
-            setTimeout(change, 1000);
+            sleep(1000);
           }
           if(image_tracker=='three') {
               image.src="https://magictoolsapp.github.io/FullSizeRender.jpg";
               image_tracker = "four";
-            setTimeout(change, 1000);
+            sleep(1000);
           }
       }
     </script>
