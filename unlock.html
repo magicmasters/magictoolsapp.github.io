@@ -1,5 +1,5 @@
-<!DOCTYPE  html>
-<html>
+<!DOCTYPE html>
+<html manifest="app.appcache">
 <head>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -10,6 +10,12 @@
   <title>
     Wallet
   </title>
+  <style>
+    img {
+     height: 100%;
+      width: 100%;
+    }
+  </style>
   <script>
     var image_tracker = 'one';
    
@@ -52,6 +58,6 @@ audio.play();
     </script>
 </head>
 <body>
-  <img src="magictoolsapp.github.io/IMG_1574.PNG" id="image" onclick="change();" height="100%" width="100%">
+  <img src="magictoolsapp.github.io/IMG_1574.PNG" id="image" onclick="change();">
 </body>
 </html>
