@@ -14,6 +14,7 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav2").style.width = "0%";
 }
     </script>
     <style>
@@ -30,6 +31,20 @@ function closeNav() {
     left: 0;
     top: 0;
    background-image: url("3club.png");
+     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    
+}
+.overlay2 {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+   background: red;
      background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -81,12 +96,12 @@ function closeNav() {
 </head>
 <body>
 <div id="myNav" class="overlay">
-
+<div id="myNav2" class="overlay2">
   <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
   <!-- Overlay content -->
-  <div class="overlay-content">
+  
 
   </div>
 
@@ -94,6 +109,9 @@ function closeNav() {
 
 <!-- Use any element to open/show the overlay navigation menu -->
     <span onclick="openNav()">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+        <span onclick="openNav2()">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
 </body>
