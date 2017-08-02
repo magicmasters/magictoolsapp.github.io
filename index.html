@@ -10,13 +10,9 @@
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
-function openNav2() {
-    document.getElementById("myNav2").style.width = "100%";
-}
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-    document.getElementById("myNav2").style.width = "0%";
 }
     </script>
     <style>
@@ -38,21 +34,6 @@ function closeNav() {
     overflow-x: hidden; /* Disable horizontal scroll */
     
 }
-.overlay2 {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-    height: 100%;
-    width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-   background: red;
-     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    
-}
-
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
@@ -61,7 +42,6 @@ function closeNav() {
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
-
 /* The navigation links inside the overlay */
 .overlay a {
     padding: 8px;
@@ -71,12 +51,10 @@ function closeNav() {
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
-
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
-
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
@@ -84,7 +62,6 @@ function closeNav() {
     right: 45px;
     font-size: 60px;
 }
-
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
@@ -98,7 +75,7 @@ function closeNav() {
 </head>
 <body>
 <div id="myNav" class="overlay">
-<div id="myNav2" class="overlay2">
+
   <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -107,15 +84,10 @@ function closeNav() {
 
   </div>
 
-  </div>
-
 </div>
 
 <!-- Use any element to open/show the overlay navigation menu -->
     <span onclick="openNav()">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
-        <span onclick="openNav2()">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
 </body>
