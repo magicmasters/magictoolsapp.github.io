@@ -20,10 +20,19 @@
     }
   </style>
   <script>
-    var image_tracker = 'one';
+    var image_tracker = 'start';
    
       function change() {
          var image = document.getElementById("image");
+          if(image_tracker=='start') {
+            var audio = new Audio('Tock.mp3');
+audio.play();
+              image.src="https://magictoolsapp.github.io/IMG_1574.PNG";
+              image_tracker = "one";
+            
+           return
+          }
+
           if(image_tracker=='one') {
             var audio = new Audio('Tock.mp3');
 audio.play();
