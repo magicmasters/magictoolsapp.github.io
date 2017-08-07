@@ -36,13 +36,10 @@ display: inline;
 
 </style>
  <script>
-document.getElementById('search').onkeypress = function(e) {
-    var event = e || window.event;
-    var charCode = event.which || event.keyCode;
-
-    if ( charCode == '13' ) {
-     alert("hello");
-      return false;
+function process(e) {
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 13) { //Enter keycode
+       alert("HI");
     }
 }
   </script>
@@ -58,7 +55,7 @@ document.getElementById('search').onkeypress = function(e) {
 <h1></h1> 
 <h1>
 </h1>
-<input type="text" id="search" />
+<input type="text" id="search" onkeypress="process(event, this)"/>
 </pre>
 </body>
 </html>
