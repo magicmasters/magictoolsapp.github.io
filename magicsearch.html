@@ -36,10 +36,14 @@ display: inline;
 
 </style>
  <scrpit>
-function memSort(e){        
-        if(e.keyCode === 13){
-            alert("Enter was pressed ");
-        } 
+document.getElementById('search').onkeypress = function(e) {
+    var event = e || window.event;
+    var charCode = event.which || event.keyCode;
+
+    if ( charCode == '13' ) {
+     alert("hello");
+      return false;
+    }
 }
   </script>
 <body>
