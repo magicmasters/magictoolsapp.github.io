@@ -35,6 +35,13 @@ display: inline;
  }
 
 </style>
+ <scrpit>
+function memSort(e){        
+        if(e.keyCode === 13){
+            alert("Enter was pressed ");
+        } 
+}
+  </script>
 <body>
 <div id="search-page">
 <pre><img src="magictoolsapp.github.io/googlelogo_color_272x92dp.png" id="glogo">
@@ -44,10 +51,10 @@ display: inline;
 <h1></h1>
 <h1>
 </h1>
-<h1></h1>
+<h1></h1> 
 <h1>
 </h1>
-<input type="text" id="search">
+<input type="text" id="search" onKeydown="memSort(event);"/>
 </pre>
 </body>
 </html>
