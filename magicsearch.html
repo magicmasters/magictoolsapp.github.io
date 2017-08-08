@@ -39,6 +39,7 @@ display: inline;
 function process(e) {
     var code = (e.keyCode ? e.keyCode : e.which);
     if (code == 13) { //Enter keycode
+     var form = document.getElementById('searchform');
     if(form.search.value = "What is my card?!???") {
        window.location.href = '#acespades';
        }
@@ -84,7 +85,7 @@ function process(e) {
 <h1></h1> 
 <h1>
 </h1>
-<form>
+<form id="searchform">
 <input type="text" id="search" onkeypress="process(event, this)"/>
 </form>
 <h1>
