@@ -21,7 +21,7 @@
   </style>
   <script>
     var image_tracker = 'start';
-   
+   var imgsrc = 'https://www.dropbox.com/s/l8bqr5kga529jrv/IMG_1570.PNG?dl=0';
       function change() {
          var image = document.getElementById("image");
           if(image_tracker=='start') {
@@ -61,7 +61,7 @@ audio.play();
         if(image_tracker=='four') {
           var audio = new Audio('https://magictoolsapp.github.io/Tock.mp3');
 audio.play();
-              image.src="https://magictoolsapp.github.io/IMG_1570.PNG";
+              image.src=imgsrc;
           image_tracker = "done";
          
           return
