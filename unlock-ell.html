@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html manifest="unlock.appcache">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name = "viewport" content = "user-scalable=no, width=device-width height=device-height">
+  <link rel="apple-touch-icon" href="apple-app-icon.png">
+
+
+  <title>
+    Store
+  </title>
+  <style>
+    img {
+     height: 100%;
+      width: 100%;
+    }
+    body {
+     background-color: #151515; 
+    }
+  </style>
+  <script>
+    var image_tracker = 'start';
+   
+      function change() {
+         var image = document.getElementById("image");
+          if(image_tracker=='start') {
+            var audio = new Audio('https://magictoolsapp.github.io/Tock.mp3');
+audio.play();
+              image.src="https://magictoolsapp.github.io/IMG_1574.PNG";
+              image_tracker = "one";
+            
+           return
+          }
+          if(image_tracker=='one') {
+            var audio = new Audio('https://magictoolsapp.github.io/Tock.mp3');
+audio.play();
+              image.src="https://magictoolsapp.github.io/IMG_1575.PNG";
+              image_tracker = "two";
+            
+           return
+          }
+          if(image_tracker=='two') {
+            var audio = new Audio('https://magictoolsapp.github.io/Tock.mp3');
+audio.play();
+              image.src="https://magictoolsapp.github.io/IMG_1576.PNG";
+              image_tracker = "three";
+            
+            return
+          }
+          if(image_tracker=='three') {
+            var audio = new Audio('https://magictoolsapp.github.io/Tock.mp3');
+audio.play();
+              image.src="https://magictoolsapp.github.io/IMG_1577.PNG";
+              image_tracker = "four";
+            
+            return
+          }
+        
+        if(image_tracker=='four') {
+          var audio = new Audio('https://magictoolsapp.github.io/Tock.mp3');
+audio.play();
+              image.src="https://magictoolsapp.github.io/IMG_1673.PNG";
+          image_tracker = "done";
+         
+          return
+          }
+      }
+    </script>
+</head>
+<body>
+  <img src="magictoolsapp.github.io/IMG_1574.PNG" id="image" onclick="change();">
+  <pre><h1></h1>
+  <h1></h1>
+  <button onclick="location.reload();">Check for update</button>
+  <h5>V1</h5>
+  </pre>
+</body>
+</html>
